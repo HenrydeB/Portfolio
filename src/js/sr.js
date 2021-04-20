@@ -76,4 +76,13 @@ export default function() {
         origin: 'bottom'
       }, defaultProps)
   );
+
+  /* Technologies section */
+  ScrollReveal().reveal('.tech-wrapper', 
+    assignProps(
+      {
+        delay: 800,
+        origin: window.innerWidth> 768 ? 'left' : 'bottom'
+      }, defaultProps)
+  );
 }

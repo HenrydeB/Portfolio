@@ -59,11 +59,10 @@
         <div class="row about-wrapper">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                Full-Stack software developer specializing in the MERN stack, supplimented
-                with knowledge in Python and PosgreSQL. I've collaborated with large and small groups and am 
-                dedicated to producing clean and efficent code. Flexible and quick to adapt to any issues that I come
-                across. Regular participant in seminars centered around languages and 
-                frameworks in order to expand knowledge in the computer science field.
+                I am a Full-Stack Software Developer based in Chicago, Illinois specializing in Javascript and related frameworks and libraries, 
+                supplemented by experience with MongoDB and PostgreSQL. Flexible and quick to adapt to any situation, 
+                I am dedicated to iterating and delivering clean and efficient code. Take a look at my portfolio, I hope 
+                we can work together in the future.
 
               </p>
               <p class="about-wrapper__info-text">
@@ -73,7 +72,7 @@
                 fuga numquam voluptate architecto itaque molestiae.-->
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://docs.google.com/document/d/1o7jZYM3DfioxY_rNOVVJa6kBewt1IJDiaTMoq90ngVs/edit?usp=sharing">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1jLid2dS1T6BFcPg-uVWsxaZTfCu2_IHp/view?usp=sharing">
                   View Resume
                 </a>
                 <a target="_blank" class="cta-btn cta-btn--github" href="https://github.com/HenrydeB"> 
@@ -109,9 +108,11 @@
                   <p class="mb-4">
                     E-Commerce page dedicated to the resale and trading of film, photo, 
                     and sound equipment. Think PoshMark, but for film equipment. Using the MERN
-                    stack to create a simple, yet attractive interface with a seamless connection to the server
-                    and database.
-                     
+                    stack to store product data in MongoDB, connecting the information to the server
+                    and using express to communicate the information to the front end. React and Redux
+                    are used to design the user interface, and provide functionality such as adding product to cart,  
+                    loading items to product page, and changing/resetting the number of cart items.
+                    
                   </p>
                 </div>
                 <!--<a target="_blank" class="cta-btn cta-btn--hero" href="#!">
@@ -140,10 +141,11 @@
                 <h3 class="project-wrapper__text-title"> Smart-Brain </h3>
                 <div>
                   <p class="mb-4">
-                    Program that uses a facial recogniton API to identify faces in images
-                    submitted by users. Before accessing the page, users sign up on a registration
-                    page where their information gets stored in a database along with the number of
-                    submissions they have in the program. (Link is on Heroku, it may take a second to load!)
+                    This is a web application that uses an external face identification API! Users register, their information is logged in 
+                    a PostgreSQL database, and the user is then able to submit image
+                    URLs from the internet. The application then uses the Clarifai facial recogniton API to 
+                    identify any faces in the image while keeping track of the number of submissions. 
+                    Give it a try! (Link is on Heroku, it may take a second to load!)
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://smart-brain-client-side.herokuapp.com/">
@@ -160,7 +162,6 @@
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
                 <a href="#!" target="_blank">
-                  <!--Add image carousel here? Photos in screenshot folder-->
                   <div data-tilt class="thumbnail rounded">
                     <img class="img-fluid" src="./assets/faceID.png" />
                   </div>
@@ -177,8 +178,8 @@
                 <div>
                   <p class="mb-4">
                     Simple front end design to a bug tracker intended to allow organizations to classify and 
-                    assign various bugs that need to be adressed in their respective projects. Back-end currently
-                    in production.
+                    assign various bugs that need to be adressed in their respective projects. Redux tools are used 
+                    to enable authentication and the creation, completion, and the updating of the bugs.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://henrydeb.github.io/Bug-Tracker-Frontend/">
@@ -209,7 +210,9 @@
                   <p class="mb-4">
                     Application that uses Google Maps API and the Nasa Earth Observatory Natural 
                     Event Tracker API data to actively plot and track wildfires around 
-                    the world. 
+                    the world. Application tracks the number of wildfires around the world using
+                    live coordinates provided by NASA satellites.This can be expanded to include 
+                    other natural events such as storms and glacial movement.
                   </p>
                 </div>
                <!-- <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
@@ -268,42 +271,38 @@
     </section>
     <!-- /END Projects Section -->
 
-    <section id="projects">
+    <section id="tech">
       <div class="container">
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="col-md-6 col-sm-12">
-              <div class="about-wrapper__info">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">Languages</h3>
-                </div>
-                <br>
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">Frameworks, Libraries, and Databases</h3>
-                </div>
-                <span class="d-flex mt-3">
-                  <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
-                    View Resume
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                HTML, CSS, Javascript/Node.js, Python
-              </p>
-              <br>
-              <p class="about-wrapper__info-text">
-                React/Redux, Bootstrap, MongoDB, PostgreSQL
-              </p>
-              <span class="d-flex mt-3">
-                
-              </span>
-            </div>
+        <h2 class="section-title dark-blue-text "class="load-hidden">
+          Languages and Frameworks
+        </h2>
+        <div class="row tech-wrapper" class="load-hidden">
+            <div class="tech-wrapper__logos" class="load-hidden">
+              <img  src="https://img.icons8.com/color/64/000000/html-5--v1.png" alt="html logo"/>
+              <p>HTML5</p>
+              <img  src="https://img.icons8.com/color/64/000000/css3.png" alt="css logo"/>
+              <p>CSS3</p>
+              <img  src="https://img.icons8.com/color/64/000000/javascript.png" alt="javascript logo"/>
+              <p>Javascript</p>
+              <img  src="https://img.icons8.com/color/64/000000/nodejs.png" alt="node.js logo"/>
+              <p>Node.js</p>
+              <img  src="https://img.icons8.com/officel/64/000000/react.png"alt="react logo"/>
+              <p>React.js</p>
+              <img  src="https://img.icons8.com/color/64/000000/redux.png" alt="redux logo"/>
+              <p>Redux.js</p>
+              <img  src="https://img.icons8.com/color/64/000000/postgreesql.png"alt="PostgreSQL logo"/>
+              <p>PostgreSQL</p>
+            <img  src="https://img.icons8.com/color/64/000000/mongodb.png" alt="mongodb logo"/>
+            <p>MongoDB</p>
+            <img  src="https://img.icons8.com/ios-filled/64/000000/jquery.png" alt="jquery logo"/>
+            <p>JQuery</p>
+            <img src="https://img.icons8.com/color/64/000000/bootstrap.png" alt="bootstrap logo"/>
+            <p>Bootstrap</p>
+            <img src="./logos/git_icon_137550.png" alt="git bash logo"/>
+            <p>Git</p>
           </div>
         </div>
+      </div>
        </div>
       </section> 
 
@@ -330,8 +329,9 @@
     <!-- **** Footer Section **** -->
     <footer class="footer navbar-static-bottom">
       <div class="container">
+        <a href="https://icons8.com/icon/84710/bootstrap">Icons by Icons8</a>
       </div>
     </footer> 
     <!-- /END Footer Section -->
   </body>
-</html>
+</html> 
