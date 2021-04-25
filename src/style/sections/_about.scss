@@ -18,6 +18,11 @@
     clip-path: none;
   }
 
+  @include respond (phone){
+    height:fit-content;
+    width: fit-content;
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
@@ -46,6 +51,8 @@
       @include respond(tab-port-sm) {
         align-items: center;
       }
+      
+      
 
       &-text {
         text-align: center;
@@ -56,6 +63,7 @@
         @include respond(tab-port-sm) {
           text-align: center;
         }
+        
 
         &--important {
           background: darken($secondary-color, 1%);
